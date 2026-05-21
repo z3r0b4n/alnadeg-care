@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>لوحة شكاوى العملاء - الناضج</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='white'/%3E%3Cimage href='data:image/png;base64,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' x='11' y='5' width='43' height='54' preserveAspectRatio='xMidYMid meet'/%3E%3C/svg%3E">
 
@@ -445,6 +446,14 @@ button{cursor:pointer}
   line-height:1.1;
   margin-top:6px;
   overflow-wrap:anywhere;
+}
+.kpi .value:not(.text-value){
+  direction:ltr;
+  unicode-bidi:isolate;
+  text-align:right;
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-variant-numeric:tabular-nums;
+  font-feature-settings:"tnum";
 }
 .kpi .value.text-value{
   font-size:28px;
@@ -1049,6 +1058,14 @@ tbody tr.selected-row td{background:#eff6ff}
 .records-table th:nth-child(8),
 .records-table td:nth-child(8){
   text-align:center;
+}
+.records-table th,
+.records-table td{
+  border-bottom:0;
+  box-shadow:inset 0 -1px 0 #eef2f7;
+}
+.records-table th{
+  box-shadow:inset 0 -1px 0 var(--line);
 }
 .calendar-wrap{overflow:visible}
 .time-panel .calendar-wrap{
@@ -1853,26 +1870,30 @@ async function loadExternalData(){
   return false;
 }
 
-const PARENT_COLORS = {"دقة الطلب":"#2563eb","جودة الطعام":"#f59e0b","الخدمة":"#10b981","النظافة":"#ec4899","ملاحظات وأخرى":"#8b5cf6"};
-const PARENT_SOFT = {"دقة الطلب":"#fde8e8","جودة الطعام":"#fef3c7","الخدمة":"#d1fae5","النظافة":"#fce7f3","ملاحظات وأخرى":"#ede9fe"};
+const PARENT_COLORS = {"دقة الطلب":"#1d4ed8","جودة الطعام":"#ea580c","الخدمة":"#15803d","النظافة":"#db2777","ملاحظات وأخرى":"#475569"};
+const PARENT_SOFT = {"دقة الطلب":"#dbeafe","جودة الطعام":"#ffedd5","الخدمة":"#dcfce7","النظافة":"#fce7f3","ملاحظات وأخرى":"#f1f5f9"};
 const PRIORITY_LABELS = {P1:"حرج",P2:"مرتفع",P3:"متوسط",P4:"منخفض"};
 const PRIORITY_COLORS = {P1:"#e15b50",P2:"#f08a3c",P3:"#d89b2b",P4:"#3bb273"};
 const PRIORITY_WEIGHT = {P1:5,P2:3,P3:2,P4:1};
 const SOURCE_COLORS = {
   "مركز الاتصال Call Center":"#2563eb",
   "مركز الاتصال":"#2563eb",
-  "تطبيق الناضج Al-Nadeg App":"#8b1520",
-  "تطبيق الناضج":"#8b1520",
-  "جوجل ماب Google Map":"#166534",
-  "جوجل ماب":"#166534",
-  "البريد الاكتروني Email وموقع الناضج":"#64748b",
+  "تطبيق الناضج Al-Nadeg App":"#b8202e",
+  "تطبيق الناضج":"#b8202e",
+  "جوجل ماب Google Map":"#2e7d32",
+  "جوجل ماب":"#2e7d32",
+  "البريد الاكتروني Email وموقع الناضج":"#b7791f",
+  "موقع الناضج":"#b7791f",
   "البريد الإلكتروني":"#64748b",
-  "واتس اب WhatsApp":"#22c55e",
-  "واتساب":"#22c55e",
+  "واتس اب WhatsApp":"#128c7e",
+  "واتساب":"#128c7e",
+  "واتس اب":"#128c7e",
   "انستا instagram":"#8b5cf6",
   "انستقرام":"#8b5cf6",
+  "انستا":"#8b5cf6",
   "منصة  X":"#111827",
-  "منصة X":"#111827"
+  "منصة X":"#111827",
+  "X":"#111827"
 };
 const TYPE_PRIORITY = {
   "جودة الذبائح":"P1","نظافة دورات المياه":"P1",
@@ -1911,10 +1932,19 @@ const FIELD_ALIASES = {
   items:["items","الأصناف","اصناف عليها ملاحظة","أصناف عليها ملاحظة","اصناف عليها ملاحظه","أصناف عليها ملاحظه","الصنف","المنتج","المنتجات"],
   desc:["desc","description","الوصف","وصف الشكوى","وصف الشكوي","نص الشكوى","نص الشكوي","الشكوى","الشكوي"]
 };
-const XLSX_SCRIPT_URL = "https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js";
+const XLSX_SCRIPT_URL = "./vendor/xlsx.full.min.js";
 let xlsxScriptPromise = null;
 
 const escapeHtml = value => String(value == null ? "" : value).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
+function actionAttrs(action, attrs = {}){
+  const parts = [`data-action="${escapeHtml(action)}"`];
+  Object.keys(attrs).forEach(key => parts.push(`data-${key}="${escapeHtml(attrs[key])}"`));
+  return parts.join(" ");
+}
+function setFilterAttrs(key, value){ return actionAttrs("set-filter", {"filter-key":key, "filter-value":value}); }
+function clearFilterAttrs(key){ return actionAttrs("clear-filter", {"filter-key":key}); }
+function setPageAttrs(page){ return actionAttrs("set-page", {page}); }
+function openComplaintAttrs(id){ return actionAttrs("open-complaint", {"complaint-id":id}); }
 const normalize = value => String(value == null ? "" : value).trim();
 function uniq(values){
   const seen = {};
@@ -2036,24 +2066,55 @@ function countBy(rows, getter){
   return counts;
 }
 function normalizedArabic(value){
-  return normalize(value).replace(/[إأآ]/g,"ا").replace(/ة/g,"ه").replace(/s+/g," ").trim();
+  return normalize(value).replace(/[إأآ]/g,"ا").replace(/ة/g,"ه").replace(/\s+/g," ").trim();
 }
 function compactKey(value){
-  return normalizedArabic(value).replace(/[\/_\-:：|.،,؛;()]/g,"").replace(/s+/g,"").toLowerCase();
+  return normalizedArabic(value).replace(/[\/_\-:：|.،,؛;()]/g,"").replace(/\s+/g,"").toLowerCase();
 }
-function normalizeBranchName(branch, source){
-  const rawBranch = normalize(branch);
-  const rawSource = normalize(source);
+function stripBranchPrefix(branch){
+  const raw = normalize(branch).replace(/\s+/g, " ");
+  return raw.replace(/^(?:فرع|الفرع)\s*[-–—_:\/\\|،,]?\s*/,"").trim() || raw;
+}
+function normalizeBranchName(branch){
+  const rawBranch = stripBranchPrefix(branch);
   const branchKey = compactKey(rawBranch);
-  const sourceKey = compactKey(rawSource);
   const adminLike = rawBranch.includes("الإدارة العامة") || rawBranch.includes("الادارة العامة") || branchKey.includes("الادارهالعامه");
   const branchCallCenterLike = rawBranch.includes("مركز الاتصال") || branchKey === "callcenter" || branchKey === "مركزالاتصال" || branchKey === "الكولسنتر";
-  const sourceCallCenterLike = rawSource.includes("مركز الاتصال") || sourceKey === "callcenter" || sourceKey === "مركزالاتصال";
   if(!rawBranch) return "غير محدد";
   if(branchCallCenterLike) return "مركز الاتصال";
-  if(adminLike) return sourceCallCenterLike ? "مركز الاتصال" : "الإدارة العامة";
-  if(branchKey === "الاداره" || branchKey === "المكتبالرئيسي") return "الإدارة العامة";
+  if(adminLike) return "الإدارة";
+  if(branchKey === "الاداره" || branchKey === "المكتبالرئيسي") return "الإدارة";
+  const branchAliases = {
+    "بريده":"بريدة",
+    "الاحساء":"الأحساء",
+    "المدينهالمنوره":"المدينة",
+    "اشبيليا":"اشبيلية",
+    "حيبدر":"بدر",
+    "مخرج24الدريهيميه":"الدريهمية",
+    "مخرج24الدريهميه":"الدريهمية",
+    "الدريهيميه":"الدريهمية",
+    "الدريهميه":"الدريهمية",
+    "مخرج18المناخ":"المناخ",
+    "الفرعالسحابيظهرهلبن":"ظهرة لبن - سحابي",
+    "السحابيظهرهلبن":"ظهرة لبن - سحابي",
+    "ظهرهلبنسحابي":"ظهرة لبن - سحابي"
+  };
+  if(branchAliases[branchKey]) return branchAliases[branchKey];
   return rawBranch;
+}
+function normalizeSourceName(source){
+  const raw = normalize(source).replace(/\s+/g, " ");
+  const key = compactKey(raw);
+  if(!raw) return "غير محدد";
+  if(key.includes("منصهx") || key === "x") return "منصة X";
+  if(key.includes("البريدالالكترونيemailوموقعالناضج") || key.includes("البريدالاكترونيemailوموقعالناضج")) return "موقع الناضج";
+  if(key.includes("مركزالاتصال") || key === "callcenter") return "مركز الاتصال";
+  if(key.includes("تطبيقالناضج")) return "تطبيق الناضج";
+  if(key.includes("جوجلماب")) return "جوجل ماب";
+  if(key.includes("واتساب")) return "واتساب";
+  if(key.includes("انستقرام")) return "انستقرام";
+  if(key.includes("انستا")) return "انستا";
+  return raw.replace(/\b(?!X\b)[A-Za-z][A-Za-z0-9.'-]*\b/g, "").replace(/\s+/g, " ").trim() || raw;
 }
 function normalizeDateValue(value){
   if(value instanceof Date && !isNaN(value.getTime())){
@@ -2077,9 +2138,9 @@ function normalizeDateValue(value){
   return raw;
 }
 function normalizeComplaintRow(row){
-  const source = normalize(row.source) || "غير محدد";
+  const source = normalizeSourceName(row.source);
   return {
-    branch: normalizeBranchName(row.branch, source),
+    branch: normalizeBranchName(row.branch),
     source: source,
     date: normalizeDateValue(row.date),
     type: normalize(row.type) || "ملاحظات عامة",
@@ -2094,7 +2155,16 @@ function applyDataRows(rows){
   DATA.splice(0, DATA.length, ...normalized);
   DATA.forEach((row, idx) => row._id = idx + 1);
 }
+function normalizeCurrentLabels(){
+  if(state.filters.branch) state.filters.branch = normalizeBranchName(state.filters.branch);
+  if(state.filters.source) state.filters.source = normalizeSourceName(state.filters.source);
+  DATA.forEach(row => {
+    row.branch = normalizeBranchName(row.branch);
+    row.source = normalizeSourceName(row.source);
+  });
+}
 function refreshOptions(){
+  normalizeCurrentLabels();
   fillSelect("branchFilter", uniq(DATA.map(r=>r.branch)).sort((a,b)=>a.localeCompare(b,"ar")));
   fillSelect("parentFilter", PARENT_ORDER);
   fillSelect("typeFilter", byCountDesc([...countBy(DATA, r=>r.type).entries()]).map(([type,count]) => ({value:type,label:`${type} (${count})`})));
@@ -2113,6 +2183,7 @@ function resetFiltersState(){
   state.scrollAnchor = null;
 }
 function rowsForFilters(options = {}){
+  normalizeCurrentLabels();
   const ignored = new Set(options.ignore || []);
   const f = state.filters;
   const q = ignored.has("search") ? "" : f.search.toLowerCase();
@@ -2303,12 +2374,22 @@ function getScrollAnchor(source){
 }
 function captureScrollAnchor(source){
   const target = source && (source.target || source);
-  const element = target && target.closest ? target.closest(".panel,.filter-panel,.kpi,.table-wrap") : null;
+  const baseElement = target && target.closest ? target.closest(".panel,.filter-panel,.kpi,.table-wrap") : null;
+  const filterAction = target && target.closest ? target.closest('[data-action="set-filter"]') : null;
+  const element = filterScrollAnchorElement(filterAction, baseElement);
   if(element && document.documentElement.contains(element)){
-    const shouldCenter = !!(target && target.closest && target.closest(".panel .clickable"));
+    const shouldCenter = !!(target && target.closest && (target.closest(".panel .clickable") || (filterAction && filterAction.closest(".panel"))));
     return {element:element, top:element.getBoundingClientRect().top, scrollY:window.scrollY || 0, center:shouldCenter};
   }
   return null;
+}
+function filterScrollAnchorElement(filterAction, baseElement){
+  if(!filterAction) return baseElement;
+  const timePanel = filterAction.closest(".time-panel");
+  if(timePanel){
+    return filterAction.closest(".weekday-total-card") || filterAction.closest(".time-pane") || baseElement;
+  }
+  return baseElement;
 }
 function preserveScroll(anchor){
   requestAnimationFrame(function(){
@@ -2386,10 +2467,55 @@ function syncTimeView(){
     btn.classList.toggle("active", btn.dataset.timeView === state.timeView);
   });
 }
+function handleActionClick(event){
+  const el = event.target && event.target.closest ? event.target.closest("[data-action]") : null;
+  if(!el || !document.documentElement.contains(el)) return;
+  const action = el.dataset.action;
+  if(!action) return;
+  if(el.matches && el.matches("button:disabled")) return;
+  if(action === "set-filter"){
+    event.preventDefault();
+    setFilter(el.dataset.filterKey, el.dataset.filterValue || "", event);
+  } else if(action === "clear-filter"){
+    event.preventDefault();
+    clearFilter(el.dataset.filterKey);
+  } else if(action === "open-complaint"){
+    event.preventDefault();
+    openComplaint(Number(el.dataset.complaintId));
+  } else if(action === "set-page"){
+    event.preventDefault();
+    state.page = Math.max(0, Number(el.dataset.page) || 0);
+    renderRecords(rowsForFilters());
+  } else if(action === "prev-page"){
+    event.preventDefault();
+    if(state.page > 0){
+      state.page--;
+      renderRecords(rowsForFilters());
+    }
+  } else if(action === "next-page"){
+    event.preventDefault();
+    const rows = rowsForFilters();
+    if((state.page + 1) * state.pageSize < rows.length){
+      state.page++;
+      renderRecords(rows);
+    }
+  }
+}
+function handleDynamicChange(event){
+  const target = event.target;
+  if(target && target.id === "pageSizeBottom"){
+    state.pageSize = Number(target.value) || 10;
+    state.page = 0;
+    renderRecords(rowsForFilters());
+  }
+}
 function colorForIndex(index){
   return ["#5b8def","#14b8a6","#d89b2b","#d85f8f","#7c6ee6","#f08a3c","#3bb273","#9aa7b5"][index % 8];
 }
 function sourceColor(source){ return SOURCE_COLORS[source] || "#9aa7b5"; }
+function sourceTextColor(source){
+  return "#fff";
+}
 function typeColor(type){ return PARENT_COLORS[parentOf(type)] || "#9aa7b5"; }
 function itemColor(item){
   const value = String(item || "");
@@ -2437,6 +2563,8 @@ function init(){
   document.addEventListener("click", rememberScrollAnchor, true);
   document.addEventListener("change", rememberScrollAnchor, true);
   document.addEventListener("input", rememberScrollAnchor, true);
+  document.addEventListener("click", handleActionClick);
+  document.addEventListener("change", handleDynamicChange);
 
   function debounce(fn, ms){ let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
   ["search","branch","parent","type","priority","source","item","weekday"].forEach(key => {
@@ -2574,7 +2702,7 @@ function renderChips(){
   };
   const chips = Object.entries(state.filters).filter(([key,value]) => value && key !== "dayStart" && key !== "dayEnd").map(([key,value]) => {
     const shown = key === "priority" ? `${value} - ${PRIORITY_LABELS[value]}` : (key === "dayStart" || key === "dayEnd") ? dateLabel(value) : value;
-    return `<span class="chip active-filter">${labels[key]}: ${escapeHtml(shown)} <button type="button" onclick="clearFilter('${key}')" aria-label="مسح ${labels[key]}">×</button></span>`;
+    return `<span class="chip active-filter">${labels[key]}: ${escapeHtml(shown)} <button type="button" ${clearFilterAttrs(key)} aria-label="مسح ${labels[key]}">×</button></span>`;
   });
   if(state.filters.dayStart || state.filters.dayEnd){
     const start = state.filters.dayStart;
@@ -2591,7 +2719,7 @@ function renderChips(){
     } else {
       dateLabelText = "... - " + dateLabel(end);
     }
-    chips.push(`<span class="chip active-filter">${label}: ${escapeHtml(dateLabelText)} <button type="button" onclick="clearFilter('day')" aria-label="مسح ${label}">×</button></span>`);
+    chips.push(`<span class="chip active-filter">${label}: ${escapeHtml(dateLabelText)} <button type="button" ${clearFilterAttrs("day")} aria-label="مسح ${label}">×</button></span>`);
   }
   const hasFilters = chips.length > 0;
   const chipsContainer = document.getElementById("activeChips");
@@ -2648,7 +2776,7 @@ function renderParentChart(rows){
   el.style.height = (Math.max(1, entries.length) * 58 + 2) + "px";
   el.style.overflow = "hidden";
   el.innerHTML = entries.length ? entries.map(e =>
-    barHtml(e.label, e.count, max, PARENT_COLORS[e.value], () => `setFilter('parent','${jsString(e.value)}')`, `${pct(e.count, total)}%`, {value:e.value, selected:state.filters.parent === e.value})
+    barHtml(e.label, e.count, max, PARENT_COLORS[e.value], "parent", `${pct(e.count, total)}%`, {value:e.value, selected:state.filters.parent === e.value})
   ).join("") : emptyHtml();
 }
 function renderSourceChart(rows){ renderPioPair(rows); }
@@ -2670,13 +2798,13 @@ function renderPioPair(rows){
   srcEl.style.height = pairH + "px";
   srcEl.style.overflow = "hidden";
   srcEl.innerHTML = srcEntries.length ? srcEntries.map(e =>
-    barHtml(e.label, e.count, srcMax, sourceColor(e.value), () => `setFilter('source','${jsString(e.value)}')`, `${pct(e.count, srcTotal)}%`, {value:e.value, selected:state.filters.source === e.value})
+    barHtml(e.label, e.count, srcMax, sourceColor(e.value), "source", `${pct(e.count, srcTotal)}%`, {value:e.value, selected:state.filters.source === e.value})
   ).join("") : emptyHtml();
   const priEl = document.getElementById("priorityChart");
   priEl.style.height = pairH + "px";
   priEl.style.overflow = "hidden";
   priEl.innerHTML = priEntries.length ? priEntries.map(e =>
-    barHtml(e.label, e.count, priMax, PRIORITY_COLORS[e.value], () => `setFilter('priority','${e.value}')`, `${pct(e.count, priTotal)}%`, {value:e.value, selected:state.filters.priority === e.value})
+    barHtml(e.label, e.count, priMax, PRIORITY_COLORS[e.value], "priority", `${pct(e.count, priTotal)}%`, {value:e.value, selected:state.filters.priority === e.value})
   ).join("") : emptyHtml();
 }
 function renderTimeAnalysis(rows){
@@ -2702,7 +2830,7 @@ function renderWeekdayChart(rows){
   const max = Math.max(1, ...entries.map(entry => entry.count));
   const total = sumEntries(entries);
   document.getElementById("weekdayChart").innerHTML = entries.length ? entries.map(entry =>
-    barHtml(entry.label, entry.count, max, weekdayColor(entry.value), () => `setFilter('weekday','${jsString(entry.value)}')`, `${pct(entry.count, total)}%`, {value:entry.value, selected:state.filters.weekday === entry.value})
+    barHtml(entry.label, entry.count, max, weekdayColor(entry.value), "weekday", `${pct(entry.count, total)}%`, {value:entry.value, selected:state.filters.weekday === entry.value})
   ).join("") : emptyHtml();
 }
 function renderWeekdayTotals(rows){
@@ -2715,7 +2843,7 @@ function renderWeekdayTotals(rows){
   target.innerHTML = days.length ? days.map(day => {
     const count = counts.get(day) || 0;
     const tone = calendarVolumeTone(count, max);
-    return `<button type="button" class="weekday-total-card clickable ${state.filters.weekday === day ? "selected" : ""}" onclick="setFilter('weekday','${jsString(day)}')" style="--day-border:${tone.border};--day-bg:${tone.bg};--day-text:${tone.text}">
+    return `<button type="button" class="weekday-total-card clickable ${state.filters.weekday === day ? "selected" : ""}" ${setFilterAttrs("weekday", day)} style="--day-border:${tone.border};--day-bg:${tone.bg};--day-text:${tone.text}">
       <span>${escapeHtml(day)}</span>
       <strong>${fmt(count)}</strong>
       <small>شكوى</small>
@@ -2741,7 +2869,7 @@ function renderBranchTable(rows){
     const width = row.risk ? (row.risk / max * 100).toFixed(2) : "0";
     const color = riskColor(row.risk, max);
     return `
-    <tr class="clickable ${selected === row.branch ? "selected-row" : ""}" onclick="setFilter('branch','${jsString(row.branch)}')">
+    <tr class="clickable ${selected === row.branch ? "selected-row" : ""}" ${setFilterAttrs("branch", row.branch)}>
       <td data-label="#"><span class="rank-number">${fmt(index + 1)}</span></td>
       <td data-label="الفرع">${escapeHtml(row.branch)}</td>
       <td data-label="الشكاوى">${fmt(row.count)}</td>
@@ -2780,15 +2908,15 @@ function renderBranchMatrix(){
   const branchDomain = domainByCount(row => row.branch);
   const totals = countBy(baseRows, row => row.branch);
   const ordered = orderEntries(branchDomain.map(branch => ({value:branch,label:branch,count:totals.get(branch) || 0})), selectedBranch, true);
-  document.getElementById("branchMatrixHead").innerHTML = `<tr><th>الفرع</th>${PARENT_ORDER.map(parent => `<th class="clickable ${selectedParent === parent ? "selected-head" : ""}" onclick="setFilter('parent','${jsString(parent)}')">${escapeHtml(parent)}</th>`).join("")}</tr>`;
+  document.getElementById("branchMatrixHead").innerHTML = `<tr><th>الفرع</th>${PARENT_ORDER.map(parent => `<th class="clickable ${selectedParent === parent ? "selected-head" : ""}" ${setFilterAttrs("parent", parent)}>${escapeHtml(parent)}</th>`).join("")}</tr>`;
   document.getElementById("branchMatrixBody").innerHTML = ordered.map(entry => {
     const branchRows = selectedBranch && entry.value !== selectedBranch ? [] : baseRows.filter(row => row.branch === entry.value);
     const counts = countBy(branchRows, row => parentOf(row.type));
     return `<tr class="matrix-row ${selectedBranch === entry.value ? "selected-row" : ""}">
-      <td data-label="الفرع" class="clickable" onclick="setFilter('branch','${jsString(entry.value)}')">${escapeHtml(entry.label)}<div class="count-label">${fmt(branchRows.length)} سجل</div></td>
+      <td data-label="الفرع" class="clickable" ${setFilterAttrs("branch", entry.value)}>${escapeHtml(entry.label)}<div class="count-label">${fmt(branchRows.length)} سجل</div></td>
       ${PARENT_ORDER.map(parent => {
         const count = selectedParent && parent !== selectedParent ? 0 : (counts.get(parent) || 0);
-        return `<td data-label="${escapeHtml(parent)}"><div class="matrix-cell clickable ${selectedParent === parent ? "selected" : ""} ${count ? "" : "zero"}" onclick="setFilter('parent','${jsString(parent)}')" style="border-color:${PARENT_COLORS[parent]}44;background:${count ? PARENT_SOFT[parent] : "#f8fafc"}"><strong>${fmt(count)}</strong><span>${pct(count, branchRows.length)}%</span></div></td>`;
+        return `<td data-label="${escapeHtml(parent)}"><div class="matrix-cell clickable ${selectedParent === parent ? "selected" : ""} ${count ? "" : "zero"}" ${setFilterAttrs("parent", parent)} style="border-color:${PARENT_COLORS[parent]}44;background:${count ? PARENT_SOFT[parent] : "#f8fafc"}"><strong>${fmt(count)}</strong><span>${pct(count, branchRows.length)}%</span></div></td>`;
       }).join("")}
     </tr>`;
   }).join("") || `<tr><td colspan="${PARENT_ORDER.length + 1}">${emptyHtml()}</td></tr>`;
@@ -2800,15 +2928,15 @@ function renderItemMatrix(){
   const itemDomain = domainByCount(row => splitItems(row.items));
   const totals = countBy(baseRows, row => splitItems(row.items));
   const ordered = orderEntries(itemDomain.map(item => ({value:item,label:item,count:totals.get(item) || 0})), selectedItem, true);
-  document.getElementById("itemMatrixHead").innerHTML = `<tr><th>الصنف</th>${PARENT_ORDER.map(parent => `<th class="clickable ${selectedParent === parent ? "selected-head" : ""}" onclick="setFilter('parent','${jsString(parent)}')">${escapeHtml(parent)}</th>`).join("")}</tr>`;
+  document.getElementById("itemMatrixHead").innerHTML = `<tr><th>الصنف</th>${PARENT_ORDER.map(parent => `<th class="clickable ${selectedParent === parent ? "selected-head" : ""}" ${setFilterAttrs("parent", parent)}>${escapeHtml(parent)}</th>`).join("")}</tr>`;
   document.getElementById("itemMatrixBody").innerHTML = ordered.map(entry => {
     const itemRows = selectedItem && entry.value !== selectedItem ? [] : baseRows.filter(row => splitItems(row.items).includes(entry.value));
     const counts = countBy(itemRows, row => parentOf(row.type));
     return `<tr class="matrix-row ${selectedItem === entry.value ? "selected-row" : ""}">
-      <td data-label="الصنف" class="clickable" onclick="setFilter('item','${jsString(entry.value)}')">${escapeHtml(entry.label)}<div class="count-label">${fmt(itemRows.length)} سجل</div></td>
+      <td data-label="الصنف" class="clickable" ${setFilterAttrs("item", entry.value)}>${escapeHtml(entry.label)}<div class="count-label">${fmt(itemRows.length)} سجل</div></td>
       ${PARENT_ORDER.map(parent => {
         const count = selectedParent && parent !== selectedParent ? 0 : (counts.get(parent) || 0);
-        return `<td data-label="${escapeHtml(parent)}"><div class="matrix-cell clickable ${selectedParent === parent ? "selected" : ""} ${count ? "" : "zero"}" onclick="setFilter('parent','${jsString(parent)}')" style="border-color:${PARENT_COLORS[parent]}44;background:${count ? PARENT_SOFT[parent] : "#f8fafc"}"><strong>${fmt(count)}</strong><span>${pct(count, itemRows.length)}%</span></div></td>`;
+        return `<td data-label="${escapeHtml(parent)}"><div class="matrix-cell clickable ${selectedParent === parent ? "selected" : ""} ${count ? "" : "zero"}" ${setFilterAttrs("parent", parent)} style="border-color:${PARENT_COLORS[parent]}44;background:${count ? PARENT_SOFT[parent] : "#f8fafc"}"><strong>${fmt(count)}</strong><span>${pct(count, itemRows.length)}%</span></div></td>`;
       }).join("")}
     </tr>`;
   }).join("") || `<tr><td colspan="${PARENT_ORDER.length + 1}">${emptyHtml()}</td></tr>`;
@@ -2826,7 +2954,7 @@ function renderChannelTable(){
   const total = ordered.reduce((sum, row) => sum + row.count, 0);
   document.getElementById("channelCount").textContent = `${fmt(sourceDomain.length)} قناة استقبال`;
   document.getElementById("channelTableBody").innerHTML = ordered.map(row => `
-    <tr class="clickable ${selected === row.source ? "selected-row" : ""}" onclick="setFilter('source','${jsString(row.source)}')">
+    <tr class="clickable ${selected === row.source ? "selected-row" : ""}" ${setFilterAttrs("source", row.source)}>
       <td data-label="القناة"><span class="badge source" style="border-color:${sourceColor(row.source)}55;color:#172033">${escapeHtml(row.source)}</span></td>
       <td data-label="عدد السجلات"><strong>${fmt(row.count)}</strong><div class="mini-meter"><div class="mini-fill ${row.count ? "" : "empty"}" style="width:${row.count ? (row.count/Math.max(1,...ordered.map(entry => entry.count))*100).toFixed(2) : 0}%;--risk-color:${sourceColor(row.source)}"></div></div></td>
       <td data-label="النسبة">${pct(row.count,total)}%</td>
@@ -2866,14 +2994,14 @@ function renderHighRiskTable(rows){
       <td data-label="التصنيف">${escapeHtml(row.type)}</td>
       <td data-label="الصنف">${escapeHtml(item)}</td>
       <td data-label="الوصف المختصر">${escapeHtml(shortText(row.desc, 54))}<div class="count-label">${escapeHtml(highRiskReason(row))}</div></td>
-      <td data-label="التفاصيل"><button class="desc-btn" onclick="openComplaint(${row._id})">عرض التفاصيل</button></td>
+      <td data-label="التفاصيل"><button class="desc-btn" ${openComplaintAttrs(row._id)}>عرض التفاصيل</button></td>
     </tr>`;
   }).join("") || `<tr><td colspan="7">${emptyHtml("لا توجد حالات عالية الخطورة ضمن النتائج الحالية.")}</td></tr>`;
 }
 function renderTopDays(rows){
   const entries = byCountDesc([...countBy(rows, row => row.date).entries()]).slice(0, 5);
   document.getElementById("topDays").innerHTML = entries.length ? entries.map(([date,count]) => `
-    <button type="button" class="top-day-card clickable ${isDaySelected(date) ? "selected-row" : ""}" onclick="setFilter('day','${jsString(date)}')">
+    <button type="button" class="top-day-card clickable ${isDaySelected(date) ? "selected-row" : ""}" ${setFilterAttrs("day", date)}>
       <strong>${escapeHtml(dateLabel(date))}</strong>
       <span>${fmt(count)} سجل</span>
     </button>
@@ -2936,7 +3064,7 @@ function renderBarPair(rows){
   typeEl.style.overflowY = typeEntries.length > TOP ? "auto" : "hidden";
   typeEl.style.overflowX = "hidden";
   typeEl.innerHTML = typeEntries.length ? typeEntries.map(e =>
-    barHtml(e.label, e.count, typeMax, typeColor(e.value), () => `setFilter('type','${jsString(e.value)}')`, `${pct(e.count, typeTotal)}%`, {value:e.value, selected:state.filters.type === e.value})
+    barHtml(e.label, e.count, typeMax, typeColor(e.value), "type", `${pct(e.count, typeTotal)}%`, {value:e.value, selected:state.filters.type === e.value})
   ).join("") : emptyHtml();
   // Render item bars
   const itemEl = document.getElementById("itemBars");
@@ -2944,7 +3072,7 @@ function renderBarPair(rows){
   itemEl.style.overflowY = itemEntries.length > TOP ? "auto" : "hidden";
   itemEl.style.overflowX = "hidden";
   itemEl.innerHTML = itemEntries.length ? itemEntries.map(e =>
-    barHtml(e.label, e.count, itemMax, itemColor(e.value), () => `setFilter('item','${jsString(e.value)}')`, `${pct(e.count, itemTotal)}%`, {value:e.value, selected:state.filters.item === e.value})
+    barHtml(e.label, e.count, itemMax, itemColor(e.value), "item", `${pct(e.count, itemTotal)}%`, {value:e.value, selected:state.filters.item === e.value})
   ).join("") : emptyHtml();
 }
 function renderTimeCalendar(rows){
@@ -3004,7 +3132,7 @@ function renderTimeCalendar(rows){
       const catColor = parentLabel ? (PARENT_COLORS[parentLabel] || "#64748b") : "";
       const catChip = (count && parentLabel) ? `<span class="cal-cat-chip" style="--cat-solid:${catColor};" title="${escapeHtml(parentLabel)}">${escapeHtml(parentLabel)}</span>` : (count ? `<span class="cal-cat-chip" style="--cat-solid:#94a3b8;"> </span>` : "");
       const tag = count ? "button" : "div";
-      const action = count ? ` type="button" onclick="setFilter('day','${jsString(date)}')"` : "";
+      const action = count ? ` type="button" ${setFilterAttrs("day", date)}` : "";
       const title = count ? `${date}: ${count} شكوى، ${parentLabel || "غير محدد"}` : `${date}: لا توجد شكاوى`;
       const startStyle = d === 1 && firstOffset ? `grid-column-start:${firstOffset + 1};` : "";
       html += `<${tag}${action} class="calendar-cell ${count ? "" : "zero"} ${isDaySelected(date) ? "selected" : ""}" style="${startStyle}--day-border:${tone.border};--day-bg:${tone.bg};--day-text:${tone.text};" title="${escapeHtml(title)}">
@@ -3118,7 +3246,7 @@ function renderRecords(rows){
   if(state.page >= pages) state.page = pages - 1;
   const start = state.page * state.pageSize;
   const pageRows = sorted.slice(start, start + state.pageSize);
-  document.getElementById("recordCount").textContent = `${fmt(sorted.length)} شكوى`;
+  document.getElementById("recordCount").textContent = `${fmt(DATA.length)} شكوى`;
   const strip = document.getElementById("paginationStrip");
   if(strip){
     const cur = state.page + 1;
@@ -3126,13 +3254,13 @@ function renderRecords(rows){
     for(let p = 1; p <= pages; p++){
       if(p === 1 || p === pages || Math.abs(p - cur) <= 1){
         const active = p === cur;
-        pips += `<button type="button" class="btn small${active ? "" : " secondary"}" style="min-width:30px;padding:4px 8px${active ? ";background:linear-gradient(135deg,var(--brand),var(--brand-light,#b8202e));color:#fff" : ""}" onclick="(function(){state.page=${p-1};renderRecords(rowsForFilters());})()">${p}</button>`;
+        pips += `<button type="button" class="btn small${active ? "" : " secondary"}" style="min-width:30px;padding:4px 8px${active ? ";background:linear-gradient(135deg,var(--brand),var(--brand-light,#b8202e));color:#fff" : ""}" ${setPageAttrs(p - 1)}>${p}</button>`;
       } else if(Math.abs(p - cur) === 2){
         pips += `<span class="page-info">…</span>`;
       }
     }
-    const navBtns = pages > 1 ? `<button class="btn small secondary" style="padding:4px 10px" ${cur===1?"disabled":""} onclick="(function(){if(state.page>0){state.page--;renderRecords(rowsForFilters());}})()">‹ السابق</button>${pips}<button class="btn small secondary" style="padding:4px 10px" ${cur===pages?"disabled":""} onclick="(function(){if(state.page<${pages}-1){state.page++;renderRecords(rowsForFilters());}})()">التالي ›</button>` : "";
-    strip.innerHTML = `<div class="pagination-left"><label class="page-size-label" for="pageSizeBottom">لكل صفحة:</label><select class="page-size-select" id="pageSizeBottom" onchange="(function(e){state.pageSize=Number(e.target.value)||10;state.page=0;renderRecords(rowsForFilters());})(event)">${[10,25,30,50,100].map(n=>`<option value="${n}"${n===state.pageSize?" selected":""}>${n}</option>`).join("")}</select></div><span style="flex:1"></span>${navBtns}`;
+    const navBtns = pages > 1 ? `<button type="button" class="btn small secondary" style="padding:4px 10px" ${cur===1?"disabled":""} ${actionAttrs("prev-page")}>‹ السابق</button>${pips}<button type="button" class="btn small secondary" style="padding:4px 10px" ${cur===pages?"disabled":""} ${actionAttrs("next-page")}>التالي ›</button>` : "";
+    strip.innerHTML = `<div class="pagination-left"><label class="page-size-label" for="pageSizeBottom">لكل صفحة:</label><select class="page-size-select" id="pageSizeBottom">${[10,25,30,50,100].map(n=>`<option value="${n}"${n===state.pageSize?" selected":""}>${n}</option>`).join("")}</select></div><span style="flex:1"></span>${navBtns}`;
   }
   document.getElementById("prevPage").disabled = state.page === 0;
   document.getElementById("nextPage").disabled = state.page >= pages - 1;
@@ -3140,22 +3268,23 @@ function renderRecords(rows){
     th.classList.toggle("active", th.dataset.sort === state.sort.key);
     th.textContent = th.textContent.replace(/ [↑↓]$/, "") + (th.dataset.sort === state.sort.key ? (state.sort.dir === "asc" ? " ↑" : " ↓") : "");
   });
-  document.getElementById("recordsBody").innerHTML = pageRows.map(row => {
+  document.getElementById("recordsBody").innerHTML = pageRows.map((row, index) => {
     const p = priorityOf(row);
     const par = parentOf(row.type);
     const parColor = PARENT_COLORS[par] || "#64748b";
     const parSoft = PARENT_SOFT[par] || "#f1f5f9";
     const srcColor = sourceColor(row.source);
+    const srcTextColor = sourceTextColor(row.source);
     return `
       <tr>
-        <td style="text-align:center;color:var(--muted);font-size:12px;font-weight:700">${row._id}</td>
+        <td style="text-align:center;color:var(--muted);font-size:12px;font-weight:700">${fmt(start + index + 1)}</td>
         <td data-label="التاريخ">${escapeHtml(row.date)}</td>
         <td data-label="الفرع"><strong>${escapeHtml(row.branch)}</strong></td>
         <td data-label="الأولوية"><span class="badge ${p.toLowerCase()}">${p} - ${PRIORITY_LABELS[p]}</span></td>
-        <td data-label="القناة"><span class="badge" style="background:${srcColor};color:#fff;border:1px solid ${srcColor}">${escapeHtml(row.source)}</span></td>
+        <td data-label="القناة"><span class="badge" style="background:${srcColor};color:${srcTextColor};border:1px solid ${srcColor}">${escapeHtml(row.source)}</span></td>
         <td data-label="الفئة"><span class="badge" style="background:${parColor};color:#fff;border:1px solid ${parColor}">${escapeHtml(par)}</span></td>
         <td data-label="التصنيف">${escapeHtml(row.type)}</td>
-        <td data-label="الوصف"><button class="desc-btn" onclick="openComplaint(${row._id})">عرض الشكوى</button></td>
+        <td data-label="الوصف"><button class="desc-btn" ${openComplaintAttrs(row._id)}>عرض الشكوى</button></td>
       </tr>
     `;
   }).join("") || `<tr><td colspan="8">${emptyHtml()}</td></tr>`;
@@ -3174,8 +3303,8 @@ function renderSvgBars(entries, options){
       const y = top + idx * (barHeight + gap);
       const w = count ? Math.max(2, (count / max) * (width - left - right)) : 0;
       const color = options.color ? options.color(label, idx) : colorForIndex(idx);
-      const click = options.onclick ? `onclick="${options.onclick(label)}" class="clickable"` : "";
-      return `<g ${click}>
+      const attrs = options.filterKey ? `${setFilterAttrs(options.filterKey, label)} class="clickable"` : "";
+      return `<g ${attrs}>
         <text x="${left - 12}" y="${y + 22}" text-anchor="end" font-size="13" fill="#374151" font-weight="800">${escapeSvg(label)}</text>
         <rect x="${left}" y="${y}" width="${width-left-right}" height="${barHeight}" rx="7" fill="#e2e8f0"></rect>
         <rect x="${left}" y="${y}" width="${w}" height="${barHeight}" rx="7" fill="${color}"></rect>
@@ -3245,7 +3374,7 @@ function renderDailyBarChart(days, values, avgValue){
     const barY = y(count);
     const barH = Math.max(0, height - pad.bottom - barY);
     const showLabel = isHot || isSel;
-    const clickAttrs = count ? `onclick="setFilter('day','${jsString(day)}')" style="cursor:pointer"` : `style="cursor:default"`;
+    const clickAttrs = count ? `${setFilterAttrs("day", day)} style="cursor:pointer"` : `style="cursor:default"`;
     return `<g class="line-dot" ${clickAttrs}>
       ${count ? `<rect x="${x.toFixed(1)}" y="${barY.toFixed(1)}" width="${barW.toFixed(1)}" height="${barH.toFixed(1)}" rx="0" fill="url(#${gradId})" ${(isHot || isSel) ? 'filter="url(#barShadow)"' : ""} data-tip="${dateLabel(day)}: ${count} شكوى"></rect>` : `<rect x="${x.toFixed(1)}" y="${(height-pad.bottom-3).toFixed(1)}" width="${barW.toFixed(1)}" height="3" rx="0" fill="#f5e0e0" opacity=".6" data-tip="${dateLabel(day)}: 0 شكوى"/>`}
       ${showLabel && count ? `<text x="${(x + barW/2).toFixed(1)}" y="${(barY - (isHot ? 12 : 7)).toFixed(1)}" text-anchor="middle" font-size="${isHot ? 12 : 11}" fill="${isSel ? "#c8922a" : "#8b1520"}" font-weight="900" font-family="inherit">${count}</text>` : ""}
@@ -3259,12 +3388,12 @@ function renderDailyBarChart(days, values, avgValue){
   }).join("")}
 </svg>`;
 }
-function barHtml(label, count, max, color, clickFactory, suffix, options = {}){
+function barHtml(label, count, max, color, filterKey, suffix, options = {}){
   if(!count) return "";
-  const click = clickFactory ? clickFactory(label) : "";
+  const attrs = filterKey ? setFilterAttrs(filterKey, options.value == null ? label : options.value) : "";
   const width = (count / max * 100).toFixed(2);
   const fill = `<div class="bar-fill" style="width:${width}%;background:${color}"></div>`;
-  return `<div class="bar-row clickable ${options.selected ? "selected" : ""}" ${click ? `onclick="${click}"` : ""}>
+  return `<div class="bar-row clickable ${options.selected ? "selected" : ""}" ${attrs}>
     <div class="bar-label" title="${escapeHtml(label)}">${escapeHtml(label)}</div>
     <div class="bar-track">${fill}</div>
     <div class="bar-value">${fmt(count)}${suffix ? `<br><span style="font-size:10px;font-weight:700;color:#87908b">${suffix}</span>` : ""}</div>
@@ -3276,10 +3405,13 @@ function emptyHtml(message){
     <p class="empty-state-msg">${escapeHtml(msg)}</p>
   </div>`;
 }
-function jsString(value){ return String(value).replace(/\\/g, "\\\\").replace(/'/g, "\\'"); }
 function escapeSvg(value){ return escapeHtml(value); }
+function csvSafeValue(value){
+  const text = String(value == null ? "" : value);
+  return /^[\s]*[=+\-@]/.test(text) ? "'" + text : text;
+}
 function csvCell(value){
-  return '"' + String(value == null ? "" : value).replace(/"/g,'""') + '"';
+  return '"' + csvSafeValue(value).replace(/"/g,'""') + '"';
 }
 function csvText(rows){
   return "\uFEFF" + rows.map(row => row.map(csvCell).join(",")).join("\n");
@@ -3440,7 +3572,7 @@ function openComplaint(id){
   document.getElementById("modalBody").innerHTML = `
     <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
       <span class="badge ${priority.toLowerCase()}">${priority} — ${PRIORITY_LABELS[priority]}</span>
-      <span class="badge" style="background:${sourceColor(row.source)};color:#fff;border:none">${escapeHtml(row.source)}</span>
+      <span class="badge" style="background:${sourceColor(row.source)};color:${sourceTextColor(row.source)};border:none">${escapeHtml(row.source)}</span>
       <span class="badge" style="background:${PARENT_COLORS[parentOf(row.type)] || '#64748b'};color:#fff;border:none">${escapeHtml(parentOf(row.type))}</span>
     </div>
     <div class="modal-grid">
@@ -3457,7 +3589,7 @@ function closeModal(){ document.getElementById("detailModal").classList.remove("
 function exportCSV(){
   const rows = sortedRows(rowsForFilters());
   const headers = ["رقم","التاريخ","اليوم","الفرع","الأولوية","الفئة","التصنيف","القناة","الأصناف","الوصف"];
-  const csvRows = rows.map(row => [row._id,row.date,dayName(row.date),row.branch,priorityOf(row),parentOf(row.type),row.type,row.source,row.items || "",row.desc || ""]);
+  const csvRows = rows.map((row, index) => [index + 1,row.date,dayName(row.date),row.branch,priorityOf(row),parentOf(row.type),row.type,row.source,row.items || "",row.desc || ""]);
   downloadCsv("لوحة_شكاوى_الناضج_نتائج_مفلترة.csv", [headers, ...csvRows]);
 }
 window.clearFilter = clearFilter;
