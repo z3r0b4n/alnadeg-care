@@ -1840,9 +1840,9 @@ const TYPE_PARENT = {
   "تأخير التوصيل":"الخدمة","تعامل موظفي الفرع":"الخدمة",
   "تاخير الاستلام":"الخدمة","تعامل مندوب التوصيل":"الخدمة","التكييف":"الخدمة",
   "نظافة الجلسات":"النظافة","نظافة منطقة الاستقبال":"النظافة","نظافة دورات المياه":"النظافة",
-  "ملاحظه/اقتراح":"ملاحظات وأخرى","ملاحظات عامة":"ملاحظات وأخرى","اقتراح":"ملاحظات وأخرى","السعر":"ملاحظات وأخرى"
+  "ملاحظه/اقتراح":"ملاحظات أخرى","ملاحظات عامة":"ملاحظات أخرى","اقتراح":"ملاحظات أخرى","السعر":"ملاحظات أخرى"
 };
-const PARENT_ORDER = ["دقة الطلب","جودة الطعام","الخدمة","النظافة","ملاحظات وأخرى"];
+const PARENT_ORDER = ["دقة الطلب","جودة الطعام","الخدمة","النظافة","ملاحظات أخرى"];
 // ═══════════════════════════════════════════════
 // DATA — loaded from complaints_data.csv at startup.
 // Place complaints_data.csv in the same folder as this HTML file.
@@ -1870,8 +1870,8 @@ async function loadExternalData(){
   return false;
 }
 
-const PARENT_COLORS = {"دقة الطلب":"#1d4ed8","جودة الطعام":"#ea580c","الخدمة":"#15803d","النظافة":"#db2777","ملاحظات وأخرى":"#475569"};
-const PARENT_SOFT = {"دقة الطلب":"#dbeafe","جودة الطعام":"#ffedd5","الخدمة":"#dcfce7","النظافة":"#fce7f3","ملاحظات وأخرى":"#f1f5f9"};
+const PARENT_COLORS = {"دقة الطلب":"#1d4ed8","جودة الطعام":"#ea580c","الخدمة":"#15803d","النظافة":"#db2777","ملاحظات أخرى":"#475569"};
+const PARENT_SOFT = {"دقة الطلب":"#dbeafe","جودة الطعام":"#ffedd5","الخدمة":"#dcfce7","النظافة":"#fce7f3","ملاحظات أخرى":"#f1f5f9"};
 const PRIORITY_LABELS = {P1:"حرج",P2:"مرتفع",P3:"متوسط",P4:"منخفض"};
 const PRIORITY_COLORS = {P1:"#e15b50",P2:"#f08a3c",P3:"#d89b2b",P4:"#3bb273"};
 const PRIORITY_WEIGHT = {P1:5,P2:3,P3:2,P4:1};
@@ -1963,7 +1963,7 @@ function fmt(n){
 }
 const byCountDesc = entries => entries.sort((a,b)=>b[1]-a[1] || String(a[0]).localeCompare(String(b[0]), "ar"));
 
-function parentOf(type){ return TYPE_PARENT[type] || "ملاحظات وأخرى"; }
+function parentOf(type){ return TYPE_PARENT[type] || "ملاحظات أخرى"; }
 function normalizePriority(value){
   const raw = normalize(value).toUpperCase();
   const key = compactKey(value);
@@ -2095,6 +2095,8 @@ function normalizeBranchName(branch){
     "الدريهيميه":"الدريهمية",
     "الدريهميه":"الدريهمية",
     "مخرج18المناخ":"المناخ",
+    "مخرج28السويدي":"السويدي",
+    "مخرج28":"السويدي",
     "الفرعالسحابيظهرهلبن":"ظهرة لبن - سحابي",
     "السحابيظهرهلبن":"ظهرة لبن - سحابي",
     "ظهرهلبنسحابي":"ظهرة لبن - سحابي"
